@@ -1,5 +1,31 @@
 $primary-color: #FFA96B;
 $secondary-color: rgba(237, 143, 2, 0.45);
+$breakpoint-desktop: 1024px;
+
+.text-primary-color {
+    color: $primary-color;
+}
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bc-normalize {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin side-padding{
+    padding: 0 2rem;
+}
+
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
 
 * {
     margin: 0;
@@ -8,7 +34,13 @@ $secondary-color: rgba(237, 143, 2, 0.45);
 
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
-    font-size: 10px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
 }

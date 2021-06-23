@@ -14,13 +14,38 @@
     <header>
         <img src="" alt="logo" class="logo">
         
-        <nav class="navbar">
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item"><a href="!#">Главная</a></li>
-                <li class="menu-nav__item"><a href="!#">Ресурсы</a></li>
-                <li class="menu-nav__item"><a href="!#">Издания</a></li>
-                <li class="menu-nav__item"><a href="!#">Посетителю</a></li>
-                <li class="menu-nav__item"><a href="!#">История</a></li>
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">
+                        Главная
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#!" class="menu-nav__link">
+                        Ресурсы
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#!" class="menu-nav__link">
+                        Издания
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#!" class="menu-nav__link">
+                        Посетителю
+                    </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#!" class="menu-nav__link">
+                        История
+                    </a>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -29,32 +54,247 @@
 
         <div class="jumbotron">
             <div class="jumbotron-container">
-                <p class="jumbotron-container__paragraph">Шымкентская городской юношеской библиотеки</p>
-                <p class="jumbotron-container__know-more"><a href="!#">Узнать больше</a></p>
+                <p class="jumbotron-container__paragraph">Шымкентская городская юношеская библиотека</p>
+                <a href="#under-jumbo">
+                    <div class="jumbotron-container__know-more">
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29289 20.7071C7.68342 21.0976 8.31658 21.0976 8.70711 20.7071L15.0711 14.3431C15.4616 13.9526 15.4616 13.3195 15.0711 12.9289C14.6805 12.5384 14.0474 12.5384 13.6569 12.9289L8 18.5858L2.34315 12.9289C1.95262 12.5384 1.31946 12.5384 0.928932 12.9289C0.538408 13.3195 0.538408 13.9526 0.928932 14.3431L7.29289 20.7071ZM7 0L7 20H9L9 0L7 0Z" fill="white"/>
+                        </svg>  
+                        
+                        <p>
+                            Узнать больше
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="schedule">
+        <div class="schedule" id="under-jumbo">
             <p class="schedule__header-text">Расписание библеотеки</p>
             <ul class="schedule-table">
-                <li class="schedule-table__item">Пн</li>
-                <li class="schedule-table__item">Вт</li>
-                <li class="schedule-table__item">Ср</li>
-                <li class="schedule-table__item">Чт</li>
-                <li class="schedule-table__item">Пт</li>
-                <li class="schedule-table__item">Сб</li>
-                <li class="schedule-table__item">Вс</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Пн</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Вт</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Ср</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Чт</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Пт</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Сб</li>
+                <li class="schedule-table__item schedule-table__item--mobile">Вс</li>
+
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Понедельник
+                    <br>
+                    09:00 - 17:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Вторник
+                    <br>
+                    09:00 - 17:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Среда
+                    <br>
+                    09:00 - 17:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Четверг
+                    <br>
+                    09:00 - 17:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Пятница
+                    <br>
+                    09:00 - 17:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Суббота
+                    <br>
+                    10:00 - 15:00
+                </li>
+                <li class="schedule-table__item schedule-table__item--desktop">
+                    Воскресенье
+                    <br>
+                    Закрыто
+                </li>
             </ul>
             <div class="schedule-box--mobile">
                 <p class="schedule-box__day-name">Понедельник</p>
                 <p class="schedule-box__time">09:00-17:00</p>
             </div>
         </div>
+        
+        <div class="maintenance-staff">
+            <section class="slider-area">
+                <div class="slider">
+                    <div class="slider__slide slider__slide-0 slider__slide--active">
+                    </div>
+                    <div class="slider__slide slider__slide-1">
+                    </div>
+                    <div class="slider__slide slider__slide-2">
+                    </div>
+                    <div class="slider__slide slider__slide-3">
+                    </div>
+                </div>
+                <div class="dots"></div>
+            </section>
 
+            <h1 class="maintenance-staff__header">Отдел обслуживания</h1>
+            <p class="maintenance-staff__text">
+                Самый крупный отдел библиотеки, состоящий из <span class="text-primary-color">абонемента, читального зала, зала периодических изданий</span>
+            </p>
+        </div>
+
+        <div class="anchor">
+            <section class="slider-area">
+                <div class="slider">
+                    <div class="slider__slide slider__slide-0 slider__slide--active">
+                    </div>
+                    <div class="slider__slide slider__slide-1">
+                    </div>
+                    <div class="slider__slide slider__slide-2">
+                    </div>
+                    <div class="slider__slide slider__slide-3">
+                    </div>
+                </div>
+
+                <div class="dots"></div>
+            </section>
+            <h1 class="anchor__header">Темірқазық</h1>
+            <p class="anchor__text">
+                Любительский клуб по интересам. Без участия членов клуба не проходит ни одно массовое мероприятие. Мероприятия проходят на казахском и русском языках. Крупные мероприятия чаще всего сопровождаются театрализованными сценками, подготовленными силами членов клуба и работниками библиотеки
+            </p>
+        </div>
+        
+
+        <div class="news">
+            <h1 class="news__header">Новости библиотеки</h1>
+            <div class="news-area">
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+                <div class="news-card">
+                    <img src="./images/1b648dae179fa170038bebecc5e01f00.jpg" alt="news-image" class="news-card__image">
+                    <h1 class="news-card__header">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus fuga totam cumque ullam asperiores.</h1>
+                    <p class="news-card__date">12 марта 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="personel">
+            <div class="personel__header">Коллектив</div>
+            <div class="person">
+                <img src="./images/9f8751a681acf76a50aa59fa9a876dca.jpg" alt="face" class="person__image">
+                <h1 class="person__name">Дарина Кудрявцева</h1>
+                <p class="person__position">Директор</p>
+            </div>
+            <div class="person">
+                <img src="./images/9f8751a681acf76a50aa59fa9a876dca.jpg" alt="face" class="person__image">
+                <h1 class="person__name">Владислав Черданцев</h1>
+                <p class="person__position">Главный редактор</p>
+            </div>
+            <div class="person">
+                <img src="./images/9f8751a681acf76a50aa59fa9a876dca.jpg" alt="face" class="person__image">
+                <h1 class="person__name">Тания Тлеубаева</h1>
+                <p class="person__position">Глава отдела маркетинга</p>
+            </div>
+            <div class="person">
+                <img src="./images/9f8751a681acf76a50aa59fa9a876dca.jpg" alt="face" class="person__image">
+                <h1 class="person__name">Тания Тлеубаева</h1>
+                <p class="person__position">Глава отдела маркетинга</p>
+            </div>
+            <div class="person">
+                <img src="./images/9f8751a681acf76a50aa59fa9a876dca.jpg" alt="face" class="person__image">
+                <h1 class="person__name">Тания Тлеубаева</h1>
+                <p class="person__position">Глава отдела маркетинга</p>
+            </div>
+
+            <button class="personel__btn">Показать всех</button>
+        </div>
+
+        <div class="reading-hall">
+            <div class="reading-hall-container">
+                <h1 class="reading-hall-container__header">Читальный зал</h1>
+                <p class="reading-hall-container__text">
+                    Главный принцип читального зала – общедоступность, демократичность, оперативность и полнота выполняемых запросов. Сегодня фонд читального зала насчитывает 42000 издания и включает литературу по всем отраслям знаний
+                </p>
+            </div>
+        </div>
+
+        <div class="partners">
+            <h1 class="partners__header">Партнеры</h1>
+            <section class="slider-area">
+                <div class="slider">
+                    <div class="slider__slide slider__slide-0 slider__slide--active">
+                    </div>
+                    <div class="slider__slide slider__slide-1">
+                    </div>
+                    <div class="slider__slide slider__slide-2">
+                    </div>
+                    <div class="slider__slide slider__slide-3">
+                    </div>
+                </div>
+                <div class="dots"></div>
+            </section>
+        </div>
+
+        <div class="location">
+            <div class="address">
+                <h1 class="address__header">г. Шымкент</h1>
+                <p class="address__text">ул. Т. Орынбаева 21 «А»</p>
+                <p class="address__text">Областная Юношеская</p>
+            </div>
+
+            <div class="contacts">
+                <h1 class="contacts__header">Библиотека</h1>
+                <p class="contacts__text">Тел./Факс: 8 (7252) 53-98-88</p>
+                <p class="contacts__text">Тел.: 8 (7252) 53-47-11</p>
+            </div>
+
+            <div class="social-media">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-media__item">
+                    <path d="M6.25 43.75L9.6875 35.8333C7.05763 32.1001 5.88056 27.5355 6.37718 22.996C6.8738 18.4566 9.00997 14.2545 12.3848 11.1782C15.7596 8.10188 20.1411 6.36294 24.707 6.2877C29.2729 6.21247 33.7094 7.8061 37.1837 10.7695C40.6581 13.7329 42.9315 17.8624 43.5775 22.3831C44.2234 26.9037 43.1973 31.5046 40.6919 35.3224C38.1864 39.1403 34.3738 41.9125 29.9696 43.119C25.5653 44.3254 20.8721 43.8831 16.7708 41.875L6.25 43.75" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.75 20.8335C18.75 21.1098 18.8597 21.3747 19.0551 21.5701C19.2504 21.7654 19.5154 21.8752 19.7917 21.8752C20.0679 21.8752 20.3329 21.7654 20.5282 21.5701C20.7236 21.3747 20.8333 21.1098 20.8333 20.8335V18.7502C20.8333 18.4739 20.7236 18.2089 20.5282 18.0136C20.3329 17.8182 20.0679 17.7085 19.7917 17.7085C19.5154 17.7085 19.2504 17.8182 19.0551 18.0136C18.8597 18.2089 18.75 18.4739 18.75 18.7502V20.8335ZM18.75 20.8335C18.75 23.5962 19.8475 26.2457 21.801 28.1992C23.7545 30.1527 26.404 31.2502 29.1667 31.2502H31.25C31.5263 31.2502 31.7912 31.1404 31.9866 30.9451C32.1819 30.7497 32.2917 30.4848 32.2917 30.2085C32.2917 29.9322 32.1819 29.6673 31.9866 29.4719C31.7912 29.2766 31.5263 29.1668 31.25 29.1668H29.1667C28.8904 29.1668 28.6254 29.2766 28.4301 29.4719C28.2347 29.6673 28.125 29.9322 28.125 30.2085C28.125 30.4848 28.2347 30.7497 28.4301 30.9451C28.6254 31.1404 28.8904 31.2502 29.1667 31.2502" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-media__item">
+                    <path d="M33.333 8.3335H16.6663C12.064 8.3335 8.33301 12.0645 8.33301 16.6668V33.3335C8.33301 37.9359 12.064 41.6668 16.6663 41.6668H33.333C37.9354 41.6668 41.6663 37.9359 41.6663 33.3335V16.6668C41.6663 12.0645 37.9354 8.3335 33.333 8.3335Z" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 31.25C28.4518 31.25 31.25 28.4518 31.25 25C31.25 21.5482 28.4518 18.75 25 18.75C21.5482 18.75 18.75 21.5482 18.75 25C18.75 28.4518 21.5482 31.25 25 31.25Z" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M34.375 15.625V15.626" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="map">
+                <img src="./images/51d28441abb0c60c387f503baf43b6d5.png" alt="">
+            </div>
+        </div>
     </main>
-
+    
     <footer>
-
+        
     </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

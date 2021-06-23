@@ -1,0 +1,124 @@
+$darkened-background-color: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+$controls-color: rgba(255,255,255,0.3);
+$controls-color-active: rgba(255,255,255,0.8);
+$transition-time-swiper: 1s;
+
+.maintenance-staff {
+
+    .slider-area {
+        height: 100vh;
+        width: 100%;
+
+        overflow-x: hidden;
+        position: relative;
+
+        background-color: $darkened-background-color;
+    }
+
+    .slider {
+        height: 100%;
+        width: 100%;
+
+
+
+        &__slide {
+            height: 100%;
+            width: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+
+            transform: translateX(100%);
+
+            &--active {
+                transform: translateX(0);
+            }
+
+            &--top {
+                transition: $transition-time-swiper ease transform;
+                // z-index: 2;
+            }
+        
+            &-0 {
+                background-image: 
+                    $darkened-background-color, 
+                    url('../images/87317ab3f32a83d9a401edfedf0d745e.jpg');
+            }
+            &-1 {
+                background-image: 
+                    $darkened-background-color, 
+                    url('../images/51d28441abb0c60c387f503baf43b6d5.png');
+            }
+            &-2 {
+                background-image: 
+                    $darkened-background-color,
+                    url('../images/9f8751a681acf76a50aa59fa9a876dca.jpg');
+            }
+            &-3 {
+                background-image: 
+                    $darkened-background-color,
+                    url('../images/aacf52c9d62bcdb490ad356ede66530c.jpg');
+            }
+        }
+    }
+
+    .buttons {
+        color: black;
+        position: absolute;
+
+        // z-index: 3;
+
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: space-between;
+
+        &__button {
+            cursor: pointer;
+            pointer-events: all;
+        
+            background-color: $controls-color;
+            padding: 0.5rem;
+        
+            &:hover {
+                background-color: $controls-color-active;
+            }
+        }
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &__dot {
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            background-color: transparent;
+            border-radius: 3rem;
+            border: 3px solid white;
+            margin: 1rem;
+
+            cursor: pointer;
+            transition: $transition-time-swiper ease width;
+
+            &--active {
+                background-color: $primary-color;
+                width: 2rem;
+
+            }
+        }
+    }
+}
+
