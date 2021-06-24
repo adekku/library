@@ -2,6 +2,8 @@
 @import './menu';
 @import './history';
 @import './toUser';
+@import './resources';
+@import './publications';
 // @import './slider';
 
 img {
@@ -13,7 +15,7 @@ main {
     flex-direction: column;
     gap: 3rem;
 
-    background-color: #F4F4F7;
+    background-color: $background-color;
 }
 
 .jumbotron {
@@ -400,15 +402,19 @@ main {
 }
 
 footer {
+    background-color: white;
     display: grid;
     gap: 1rem;
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
-    h1 {
-        font-size: 1.25rem;
-    }
+    margin-top: 2rem;
+
+}
+
+.address__header,
+.contacts__header {
+    font-size: 1.25rem;
 }
 
 .logo-and-name {

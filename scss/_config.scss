@@ -1,6 +1,7 @@
 $primary-color: #FFA96B;
 $secondary-color: rgba(237, 143, 2, 0.45);
 $breakpoint-desktop: 1024px;
+$background-color: #F4F4F7;
 
 .text-primary-color {
     color: $primary-color;
@@ -55,10 +56,14 @@ a {
 
 
 html {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 1.25;
+}
+
+body {
+    background-color: $background-color;
 }
 
 @include desktop {

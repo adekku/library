@@ -1,0 +1,34 @@
+.resource-block {
+    background-color: white;
+    margin: 0 1rem;
+    box-shadow: rgba(4, 9, 125, 0.06) 2px 4px 15px;
+    padding: 2rem;
+
+    &__header {
+        background-image: url('../images/Ellipse\ 7.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        padding-left: 1.8rem;
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+    
+    &__subheader {
+        font-size: 1.15rem;
+        margin: 0.5rem 0;
+    }
+}
+
+.resources-list {
+
+    &__publication {
+        list-style-type: none;
+    }
+
+    padding: 0 1rem;
+    background-image: url('../images/Ellipse\ 6.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+
+}

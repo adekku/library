@@ -1,0 +1,46 @@
+.annotation--bc-white {
+    background-color: white;
+    box-shadow: 2px 4px 15px rgba(4, 9, 125, 0.06);
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.publications-area {
+    @include side-margin;
+}
+
+.publication {
+    background-color: white;
+    box-shadow: 2px 4px 15px rgba(4, 9, 125, 0.06);
+
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    background-image: url('../images/orange-rec-left.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 90% 1%;
+
+    display: grid;
+    gap: 0.5rem;
+
+    &__image {
+        box-shadow: 
+            -5px -3px 0px #FFA96B,
+            2px 3px 0px #FFA96B;
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+}
+
+@include desktop {
+    .publications-area {
+        margin: unset;
+        @include side-padding;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
