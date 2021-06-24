@@ -1,0 +1,22 @@
+.annotation {
+    @include side-margin;
+    display: inline;
+    padding-left: 1rem;
+    
+    background-image: url('../images/orange-rec-left.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2% 70%;
+}
+
+.rules-block {
+    @include side-padding;
+
+    &__text {
+        margin: 1rem 0;
+
+        &::first-letter {
+            padding-left: 1rem;
+        }
+    }
+}

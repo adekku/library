@@ -1,0 +1,53 @@
+.history-block {
+    @include side-padding;
+
+    &__header {
+        display: inline;
+        padding-left: 1rem;
+        padding-top: 0.25rem;
+        background-image:
+            linear-gradient(90deg, #FFA96B,#FFA96B),
+            linear-gradient(90deg, transparent, transparent);
+        background-size:
+          100% 60%,
+          100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.gallery-3-col {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+@include desktop {
+    .gallery-3-col {
+        visibility: unset;
+        position: unset;
+        width: unset;
+        height: unset;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        @include side-padding;
+
+        &__image {
+            object-fit: cover;
+
+            &--span {
+                grid-column: 1/3;
+            }
+        }
+
+    }
+}

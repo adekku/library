@@ -18,7 +18,22 @@ $breakpoint-desktop: 1024px;
 }
 
 @mixin side-padding{
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @if (min-width: $breakpoint-desktop) {
+        padding: 0 6rem;
+    }
+}
+
+@mixin side-margin{
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    @if (min-width: $breakpoint-desktop) {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
 }
 
 @mixin desktop {
@@ -38,9 +53,16 @@ a {
     text-decoration: none;
 }
 
+
 html {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 1.25;
+}
+
+@include desktop {
+    html {
+        font-size: 20px;
+    }
 }
